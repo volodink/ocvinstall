@@ -5,6 +5,7 @@ apt-get install -y git libopencv-dev build-essential checkinstall cmake pkg-conf
 
 git clone https://github.com/opencv/opencv
 cd opencv
+git checkout 3.4.1
 mkdir release
 cd release
 cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_TBB=ON -D BUILD_NEW_PYTHON_SUPPORT=ON -D WITH_V4L=ON -D INSTALL_C_EXAMPLES=OFF -D INSTALL_PYTHON_EXAMPLES=OFF -D BUILD_EXAMPLES=OFF -D WITH_QT=ON -D WITH_OPENGL=ON ..
