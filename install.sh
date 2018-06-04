@@ -6,6 +6,7 @@ apt-get install -y git libopencv-dev build-essential checkinstall cmake pkg-conf
 
 wget https://codeload.github.com/opencv/opencv/zip/master -O opencv.zip
 unzip opencv.zip
+mv opencv-master opencv
 cd opencv
 git checkout 3.4.1
 mkdir release
